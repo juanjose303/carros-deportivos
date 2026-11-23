@@ -93,4 +93,44 @@ color:#white;
 
 }
 
+.galeria img{
+    width:220px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    animation: girar 6s linear infinite;
+    transition:0.5s;
+}
+
+.galeria img:hover{
+    animation-play-state: paused;
+    transform: scale(1.15);
+}
+
+@keyframes girar{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.galeria{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    perspective:1000px;
+}
+
+.galeria img{
+    width:220px;
+    height:180px;
+    border-radius:15px;
+    transition:transform 0.8s;
+}
+
+.galeria img:hover{
+    transform:rotateY(360deg) scale(1.1);
+}
 
