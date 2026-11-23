@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo flexbox</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo CSS -->
+
+<body>
+
+
+
+		<div class="menu">
+		<ul>
+		   <li><a href="index.html">index</a> </li>
+             <li><a href="bugatti.html">bugatti</a></li>
+             <li><a href="ferrari.html">ferrari</a> </li>
+             <li><a href="lamborghini.html">lamborghini</a> </li>
+	       <li><a href="carritocompras.html">carritocompras</a> </li>	
+		</ul>
+    </div>
+
+<div class="carros">
+ 
+		<div class="producto">
+			 <img src="imagen3.png"> 
+			 <h3>ferrari</h3>
+			 <p>precio:$65.000</p>
+			 <button onclick="agregar('ferrari',65000)">
+				   agregar al carrito
+			 </button>
+		</div>
+    	
+		<div class="producto">
+			 <img src="imagen2.png">   
+			 <h3>bugatti</h3>
+			 <p>precio:$80.000</p>
+			 <button onclick="agregar('bugatti',80000)">
+				   agregar al carrito
+			 </button>
+		</div>
+
+		<div class="producto">
+			<img src="imagen.png">  
+			 <h3>lamborghini</h3>
+			 <p>precio:$35.000</p>
+			 <button onclick="agregar('lamborghini',35000)">
+				   agregar al carrito
+			 </button>
+		</div>
+	</div>
+  
+    <div class="carrito">
+         <h2>mi carrito de compras</h2>
+
+         <ul id="lista-carrito"></ul>
+ 
+         <h3>total:$<span id="total">0</span></h3>
+		
+		 <button onclick="vaciarCarrito()">
+		     vaciar carrito
+         </button>
+
+    </div>
+
+<script src="script.js"></script>	
+
+</head>
+</html>
